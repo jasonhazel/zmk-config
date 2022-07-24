@@ -15,3 +15,5 @@
 include:
   - board:  seeeduino_xiao
     shield: minisat
+  - board: nice_nano_v2
+    shielf: pancake
