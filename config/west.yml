@@ -2,10 +2,13 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: crides
+      url-base: https://github.com/crides/zmk
+
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: crides
+      revision: cirque-trackpad
       import: app/west.yml
   self:
     path: config
