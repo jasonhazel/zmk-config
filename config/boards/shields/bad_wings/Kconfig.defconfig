@@ -1,8 +1,19 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_BAD_WINGS
+if SHIELD_BAD_WINGS_DONGLE || SHIELD_BAD_WINGS
 
 config ZMK_KEYBOARD_NAME
     default "Bad Wings"
+
+endif
+
+if SHIELD_BAD_WINGS_DONGLE
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+endif
+
+if SHIELD_BAD_WINGS_DONGLE || SHIELD_BAD_WINGS_BODY
+config ZMK_SPLIT
+    default y
 endif
