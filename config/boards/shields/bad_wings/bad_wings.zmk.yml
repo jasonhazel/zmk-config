@@ -6,3 +6,6 @@ url: https://github.com/jasonhazel/bad_wings
 requires: [seeed_xiao]
 features:
   - keys
+  siblings:
+  - bad_wings_dongle
+  - bad_wings_body
