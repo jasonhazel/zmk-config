@@ -10,3 +10,4 @@ config SHIELD_BAD_WINGS_DONGLE
 
 config SHIELD_BAD_WINGS_BODY
     def_bool $(shields_list_contains,bad_wings_body)
+    select SPI
