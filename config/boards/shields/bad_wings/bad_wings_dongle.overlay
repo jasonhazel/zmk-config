@@ -5,7 +5,8 @@
  */
 
 #include "bad_wings.dtsi"
-
+/ {
+	
 
 	kscan0: kscan {
 		compatible = "zmk,kscan-gpio-direct";
