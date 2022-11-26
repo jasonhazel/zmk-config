@@ -10,7 +10,7 @@
 
 &xiao_spi {
     status = "okay";
-    cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>;
+    cs-gpios = <&xiao_d 6 GPIO_ACTIVE_LOW>, <&xiao_d 8 GPIO_ACTIVE_LOW>;
     shifter: 595@0 {
         compatible = "zmk,gpio-595";
         status = "okay";
@@ -21,6 +21,16 @@
         #gpio-cells = <2>;
         ngpios = <8>;
     };
+    trackpad@1 {
+        compatible = "cirque,pinnacle";
+        status = "okay";
+        reg = <1>;
+        spi-max-frequency = <10000000>;
+        dr-gpios = <&xiao_d 5 GPIO_ACTIVE_LOW>;
+        invert-x;
+        sleep;
+        /* no-taps; */
+    };    
 };
 
 / {
