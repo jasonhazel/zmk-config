@@ -42,7 +42,7 @@
             timeout-ms = "100";
             key-positions = <32 33>;
             bindings = <&tog MOUSE>;
-        }
+        };
     };
 
     behaviors {
