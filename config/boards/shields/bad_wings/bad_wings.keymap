@@ -156,10 +156,10 @@
         };
         MOUSE_layer {
             bindings = <
-                &none       &none       &none       &none       &none       &none               &none           &mmv MOVE_UP    &none        &none
-                &none       &none       &none       &mwh SCROLL_UP  &mwh SCROLL_DOWN       &none               &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none
-                &none       &none       &none       &none       &none       &mwh SCROLL_DOWN    &mwh SCROLL_UP  &mwh SCROLL_DOWN       &none           &none                                 
-                                &mkp RCLK   &mkp MCLK   &mkp LCLK           &mkp LCLK           &mkp MCLK       &mkp RCLK
+                &none       &none       &none       &none           &none                   &none       &none           &mmv MOVE_UP    &none        &none
+                &none       &none       &none       &mwh SCROLL_UP  &mwh SCROLL_DOWN        &none       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none
+                &none       &none       &none       &none           &none                   &none       &none           &none       &none           &none                                 
+                                        &mkp RCLK   &mkp MCLK       &mkp LCLK               &mkp LCLK   &mkp MCLK       &mkp RCLK
             >;
         };        
     };
