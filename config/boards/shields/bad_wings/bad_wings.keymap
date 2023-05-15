@@ -153,7 +153,7 @@
             bindings = <
                 &none       &none       &none       &none       &none       &none       &mwh SCROLL_UP       &mmv MOVE_UP    &mwh SCROLL_DOWN       &none
                 &none       &none       &none       &none       &none       &none       &mmv MOVE_LEFT       &mmv MOVE_DOWN  &mmv MOVE_RIGHT       &none
-                &none       &none       &none       &none       &none       &none       &none       &none       &none       &none                                 
+                &none       &none       &none       &none       &none       &none       &mkp RCLK   &mkp MCLK   &mkp LCLK       &none                                 
                                 &mkp RCLK   &mkp MCLK   &mkp LCLK          &trans      &trans      &trans
             >;
         };        
