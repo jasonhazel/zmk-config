@@ -41,7 +41,15 @@
         combo_mouselayer {
             timeout-ms = <100>;
             key-positions = <32 33>;
-            bindings = <&tog MOUSE>;
+            bindings = <&to MOUSE>;
+            layers = <0 1 2 3>;
+        };
+
+        combo_baselayer {
+            timeout-ms = <100>;
+            key-positions = <32 33>;
+            bindings = <&to 0>;
+            layers = <3>;
         };
     };
 
