@@ -49,12 +49,36 @@
             bindings = <&kp Q>, <&kp ESC>;
         };
 
-        dance: dance_behavior {
+        bkt: tap_dance_bracket {
             compatible = "zmk,behavior-tap-dance";
-            label = "dance_behavior";
-            #binding-cells = <2>;
+            label = "tap_dance_bracket";
+            #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp>, <&kp>;
+            bindings = <&kp LBKT>, <&kp RBKT>;
+        };
+
+        brc: tap_dance_brace {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_braces";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LBRC>, <&kp RBRC>;
+        };
+
+        par: tap_dance_paren {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_paren";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LPAR>, <&kp RPAR>;
+        };
+
+        thn: tap_dance_then {
+            compatible = "zmk,behavior-tap-dance";
+            label = "tap_dance_then";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LT>, <&kp GT>;
         };
 
         skq: sticky_quick {
@@ -80,7 +104,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "spacebar_layer";
             #binding-cells = <0>;
-            tapping-term-ms = <500>;
+            tapping-term-ms = <100>;
             quick-tap-ms = <0>;
             flavor ="tap-preferred";
             bindings = <&kp SPACE>, <&mo MOUSE>;
@@ -110,7 +134,7 @@
         SYMBOL_layer {
             bindings = <
                 &kp EXCL    &kp AT      &kp HASH    &kp DLLR    &kp PRCNT   &kp CARET   &kp AMPS    &kp STAR    &kp PIPE    &none
-                &kp GRAVE   &kp TILDE   &kp UNDER   &kp EQUAL   &none       &dance LBKT RBKT        &dance LBRC RBRC        &dance LPAR RPAR        &dance LT GT        &kp BSLH
+                &kp GRAVE   &kp TILDE   &kp UNDER   &kp EQUAL   &none       &bkt        &brc        &par        &thn        &kp BSLH
                 &none       &none       &kp PLUS    &kp MINUS   &none       &none       &none       &kp COLON   &trans     &kp SEMI
                                         &trans      &trans      &trans      &trans      &trans      &trans
             >;
