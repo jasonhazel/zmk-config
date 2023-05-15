@@ -27,7 +27,7 @@
 
 &mmv {
     acceleration-exponent=<1>;
-}
+};
 
 / {
     combos {
