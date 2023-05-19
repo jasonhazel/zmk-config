@@ -40,7 +40,7 @@
 
         combo_mouselayer {
             timeout-ms = <100>;
-            key-positions = <32 33>;
+            key-positions = <31 33>;
             bindings = <&tog MOUSE>;
         };
     };
